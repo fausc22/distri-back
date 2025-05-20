@@ -15,10 +15,12 @@ const ventasRoutes = require('./routes/ventasRoutes');
 const productosRoutes = require('./routes/productosRoutes');
 const personasRoutes = require('./routes/personasRouter');
 const authRoutes = require('./routes/authRoutes');
+const comprasRoutes = require('./routes/comprasRoutes');
+const finanzasRoutes = require('./routes/finanzasRouter');
 
  
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:3000'];
 
 const corsOptions = {
     origin: (origin, callback) => {
@@ -44,6 +46,10 @@ app.use('/ventas', ventasRoutes);
 app.use('/productos', productosRoutes);
 app.use('/personas', personasRoutes);
 app.use('/auth', authRoutes);
+app.use('/compras', comprasRoutes);
+app.use('/compras', comprasRoutes);
+app.use('/finanzas', finanzasRoutes);
+
 
 
 // Iniciar el servidor

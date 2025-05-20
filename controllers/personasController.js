@@ -8,9 +8,7 @@ const dotenv = require('dotenv');
 const nuevoCliente = (req, res) => {
     const { nombre, condicion_iva, cuit, dni, direccion, ciudad, provincia, telefono, email } = req.body;
 
-    if (!nombre || !condicion_iva || !cuit || !dni || !direccion || !ciudad || !provincia || !telefono || email === undefined) {
-        return res.status(400).json({ success: false, message: "Todos los campos son obligatorios" });
-    }
+    
 
     const query = `
         INSERT INTO clientes (nombre, condicion_iva, cuit, dni, direccion, ciudad, provincia, telefono, email)
@@ -47,9 +45,7 @@ const actualizarCliente = (req, res) => {
     const clienteId = req.params.id;
     const { nombre, condicion_iva, cuit, dni, direccion, ciudad, provincia, telefono, email } = req.body;
 
-    if (!nombre || !condicion_iva || !cuit || !dni || !direccion || !ciudad || !provincia || !telefono || email === undefined) {
-        return res.status(400).json({ success: false, message: "Todos los campos son obligatorios" });
-    }
+    
 
     // Verificar si el producto existe antes de actualizar
     const checkQuery = `SELECT id FROM clientes WHERE id = ?`;

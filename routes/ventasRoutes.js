@@ -29,6 +29,7 @@ router.put('/actualizar-producto-venta/:productId', ventasController.actualizarP
 
 router.post('/generarpdf-listaprecio', ventasController.generarPdfListaPrecio);
 router.post('/generarpdf-factura', ventasController.generarPdfFactura);
+router.post('/generarpdf-facturas-multiples', ventasController.generarPdfFacturasMultiples);
 
 router.post('/guardarComprobante/:ventaId', ventasController.guardarComprobante);
 router.get('/cargarComprobante/:ventaId', ventasController.obtenerComprobante);
