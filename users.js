@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 
 // Configurar la conexión a la base de datos
