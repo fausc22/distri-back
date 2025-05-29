@@ -20,7 +20,7 @@ const finanzasRoutes = require('./routes/finanzasRouter');
 
  
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['http://localhost:3000', 'https://distri-back-a9qz.onrender.com'];
 
 const corsOptions = {
     origin: (origin, callback) => {
