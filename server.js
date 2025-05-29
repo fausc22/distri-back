@@ -19,8 +19,8 @@ const comprasRoutes = require('./routes/comprasRoutes');
 const finanzasRoutes = require('./routes/finanzasRouter');
 
  
-//pongo los fronts
-const allowedOrigins = ['http://localhost:3000', 'https://distri-vertimar.vercel.app/'];
+//pongo los fronts BIEN
+const allowedOrigins = ['http://localhost:3000', 'https://distri-vertimar.vercel.app'];
 
 const corsOptions = {
     origin: (origin, callback) => {
