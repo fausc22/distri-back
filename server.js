@@ -19,8 +19,8 @@ const comprasRoutes = require('./routes/comprasRoutes');
 const finanzasRoutes = require('./routes/finanzasRouter');
 
  
-
-const allowedOrigins = ['http://localhost:3000', 'https://distri-back-a9qz.onrender.com'];
+//pongo los fronts
+const allowedOrigins = ['http://localhost:3000', 'https://distri-vertimar.vercel.app/'];
 
 const corsOptions = {
     origin: (origin, callback) => {

@@ -1,7 +1,7 @@
 const mysql = require('mysql2/promise');
 const bcrypt = require('bcryptjs');
 
-
+//oaaa
 // Configurar la conexión a la base de datos
 const pool = mysql.createPool({
     host: 'localhost',
